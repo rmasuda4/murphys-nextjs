@@ -1,14 +1,65 @@
-html,
-body {
-  --bs-light-rgb: 236, 236, 236;
-  box-sizing: border-box;
-  height: 100%;
-  padding: 0;
-  margin: 0;
+/* Top Menu */
+#topMenu {
+  background-color: #004030;
+  color: white;
+  padding: 10px 0;
 }
-.wrapper {
-  box-sizing: border-box;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+  text-decoration: underline;
+}
+
+/* Hero Background Image */
+.grad-background {
+  background-image: url('http://courses.ics.hawaii.edu/ics314f25/morea/ui-frameworks/murphys-new-background.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Hero Text Styling */
+.grad-background h1,
+.grad-background h2,
+.grad-background h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+#footer {
+  background-color: #004030;
+}
+
+#footer h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Collapsed navbar links horizontal */
+@media (max-width: 991px) {
+  #navbarLinks .navbar-nav {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #navbarLinks .nav-item {
+    margin: 5px 15px; /* increased from 10px to 15px */
+  }
+  
+  #navbarLinks .nav-link {
+    padding: 8px 12px; /* add padding inside each link */
+  }
 }
